@@ -1,0 +1,2 @@
+
+python .\scripts\index.py

@@ -1,0 +1,5 @@
+credentials.py
+env/
+__pycache__/
+scripts/faceData/person1/
+face/IMG*
