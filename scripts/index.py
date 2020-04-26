@@ -4,7 +4,7 @@
 
 from findFace import *
 from uploadToCloudinary import UploadPhoto
-
+from sendMessage import sendSMS
 
 print('*****************************START*******************************')
 while True:
@@ -12,7 +12,6 @@ while True:
     if(z!='1'):
         break
     [path,username] = Capture_Face()
-    [path,username] = ["face\IMG-39559.jpg",False]
     message = "Hello, There is someone at the door.\n"
     message += "Name:"
     if(username):
@@ -25,5 +24,5 @@ while True:
     message += "\nHere is link of photo "+ImgUrl
 
     print(message)
-
+    sendSMS(message,8059111155)
 print('*****************************EXIT********************************')
