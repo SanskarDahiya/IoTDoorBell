@@ -24,5 +24,7 @@ while True:
     message += "\nHere is link of photo "+ImgUrl
 
     print(message)
-    sendSMS(message,8059111155)
+    # 
+    # sendSMS(message,phone number)
+    sendSMS(message)
 print('*****************************EXIT********************************')
